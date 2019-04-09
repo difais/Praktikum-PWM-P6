@@ -1,0 +1,96 @@
+<!--
+Copyright 2018 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta charset="utf-8">
+  <title>Latihan 6</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <header>
+    <h1>My Profile</h1>
+  </header>
+  <main>
+    <section class="card">
+      <div class="img-container">
+        <img src="images/difa.jpg">
+      </div>
+		<p>
+		Nama				:	Difa Isnaini<br/>
+		Tempat, Tgl Lahir 	:	Klaten, 22 Februari 1998<br/>
+		Jenis Kelamin		:	Perempuan<br/>
+		Alamat				:	Kauman, Kalitengah, Wedi, Klaten<br/>
+		Hobby				:	Bersepeda, Badminton, Mendengarkan Musik<br/>
+		Gol. Darah			:	AB<br/>
+		Agama				:	Islam<br/>
+		Pekerjaan			:	Mahasiswa<br/>
+		Kewarganegaraan		:	WNI<br/>
+		</p>
+    </section>
+    <section class="card">
+		<h2>Pendidikan Formal</h2>
+		<p>
+		1. 2004 - 2010 : SD Muh Wedi <br/>
+		2. 2010 - 2013 : SMP Muh 1 Klaten <br/>
+		3. 2013 - 2016 : SMK Muh 2 Klaten Utara <br/>
+		4. 2016 - Sekarang : STMIK AKAKOM Yogyakarta
+		</p>
+    </section>
+	    <section class="card">
+		<h2> Motto  </h2>
+		<p>
+		Once you choose hope, anything's possible. (Christopher Reeve)</p>
+    </section>
+	<section class="card">
+      <h2>My Instagram</h2>
+      <p>@difa_10969</p>
+    </section>
+	<section class="card">
+      <h2>My Email</h2>
+      <p>difa12947@gmail.com</p>
+    </section>
+	<section class="card">
+      <h2>My WhatsApp</h2>
+      <p>0897079001*</p>
+    </section>
+  </main>
+  <footer>
+    <ul class="flex-list">
+      <li><a href="#home">home</a></li>
+      <li><a href="#share">share</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#about">about</a></li>
+    </ul>
+  </footer>
+
+   <!-- TODO Register the service worker -->
+	<script>
+	if	('serviceWorker'	in	navigator)	{
+		navigator.serviceWorker.register('difa-is.js')
+		.then(function(registration)	{
+			console.log('Registered:',	registration);
+		})
+		.catch(function(error)	{
+			console.log('Registration failed: ', error);
+		});
+	}
+	</script>
+	
+</body>
+</html>
